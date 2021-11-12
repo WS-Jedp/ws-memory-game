@@ -1,0 +1,58 @@
+.card__container {
+    position: relative;
+    width: 100px;
+    height: 130px;
+    border-radius: 9px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255, .3);
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: 0.3s ease-in-out;
+}
+
+.card__front {
+    position: relative;
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.card__front figure {
+    position: relative;
+    width: 120%;
+    height: 60px;
+}
+
+.card__front figure img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__back {
+    background-color: var(--color-purple-dark) !important;
+    transform: rotateY(0deg);
+}
+
+.card__container.card--show > .card__front {
+    transform: rotateY(0deg);
+}
+.card__container.card--show > .card__back {
+    transform: rotateY(-180deg);
+}
+
+.card__container.card--guessed {
+    box-shadow: 0px 0px 21px 0px green;
+}
+

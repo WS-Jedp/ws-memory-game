@@ -1,0 +1,88 @@
+:root {
+  --color-purple-dark: #140832;
+  --color-purple-ligth: #6363FF;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ------------------------------------ */
+/* --------- BACKGROUNDS -------------- */
+/* ------------------------------------ */
+.bg-purple {
+  background-color: var(--color-purple-dark);
+  color: white;
+}
+
+/* ------------------------------- */
+/* --------- TITLES -------------- */
+/* ------------------------------- */
+.lines-title {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+/* ---------------------------------------- */
+/* ------------ TEXT -------------- */
+/* ---------------------------------------- */
+.text-purple-light {
+  color: var(--color-purple-ligth);
+}
+.text-shadow-white {
+  text-shadow: 0 0 12px white;
+}
+.text-shadow-purple-light {
+  text-shadow: 0 0 12px var(--color-purple-ligth);
+}
+
+/* ---------------------------------------- */
+/* ------------ BUTTONS -------------- */
+/* ---------------------------------------- */
+.btn {
+  width: 210px;
+  min-height: 42px;
+  cursor: pointer;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-purple-light {
+  background-color: var(--color-purple-ligth);
+  box-shadow: 0 0 9px 0 var(--color-purple-ligth);
+  color: white;
+}
+.btn-purple-light:hover {
+  color: white;;
+  text-shadow: 0 0 12px white;
+  transform: scale(1.01);
+  box-shadow: 0 0 15px 0 var(--color-purple-ligth);
+}
+
+.btn-danger {
+  background-color: rgb(226, 47, 47);
+  box-shadow: 0 0 9px 0 rgb(226, 47, 47);
+  color: white;
+}
+.btn-danger:hover {
+  color: white;;
+  text-shadow: 0 0 12px white;
+  transform: scale(1.01);
+  box-shadow: 0 0 15px 0 rgb(226, 47, 47);
+}
+
+
+
